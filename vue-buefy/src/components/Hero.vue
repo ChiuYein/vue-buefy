@@ -1,9 +1,10 @@
 <template>
-  <div class="hero">
+  <div class="hero is-primary is-fullheight is-bold">
     <div class="hero-body">
-      <div class="container">
-        <p>{{ title }}</p>
-        <p>{{ msg }}</p>
+      <div class="container has-text-centered">
+        <h1 class="title">{{ title }}</h1>
+        <p class="is-size-5">{{ msg }}</p>
+        <a href="#contactForm" class="button m-t-10">Contact Us</a>
       </div>
     </div>
   </div>
@@ -20,20 +21,8 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style>
+    .m-t-10 {
+        margin-top: 10px;
+    }
 </style>
